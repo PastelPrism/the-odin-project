@@ -1,4 +1,3 @@
-
 :root {
   --primary-bg: #f09116d8;
   --accent: #e9cb21;
@@ -8,7 +7,6 @@
   --hover: drop-shadow(0 0 6px #e9cb21);
   --tagline-color: darkolivegreen;
   --link-color: #882835;
-  
 }
 
 * {
@@ -17,8 +15,9 @@
   padding: 0;
 }
 
-html, body {
-  font-family: 'Merriweather', serif;
+html,
+body {
+  font-family: "Merriweather", serif;
   background: var(--primary-bg);
   color: var(--text-white);
   min-height: 100vh;
@@ -63,16 +62,17 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('https://images.unsplash.com/photo-1541377391972-03ee2fe4c4a5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+  background: url("https://images.unsplash.com/photo-1541377391972-03ee2fe4c4a5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     center/cover no-repeat;
   position: relative;
 }
 
 /* Hero text */
-.hero h1, .hero .hero-tagline {
+.hero h1,
+.hero .hero-tagline {
   position: relative;
   z-index: 1;
-  font-family: 'Cinzel', cursive;
+  font-family: "Cinzel", cursive;
   margin-bottom: 0.5rem;
   display: block;
   background: none;
@@ -96,12 +96,12 @@ html, body {
   display: block;
   margin-left: 0;
   margin-bottom: 0;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255, 0.7);
   padding: 0.5em 1em;
   border-radius: 0.5em;
   box-shadow: 0 2px 8px var(--shadow);
   font-weight: bold;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   opacity: 0;
   transform: translateX(60px);
   animation: slideInRight 1s ease-out 0.3s forwards;
@@ -129,7 +129,7 @@ html, body {
 
 /* Recipes */
 #top-five h2 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: var(--tagline-color);
   margin: 1rem auto;
   text-align: center;
@@ -142,20 +142,32 @@ html, body {
   gap: 1rem;
 }
 .recipe-list a {
-  display: block;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+  padding: 1.25rem 0.5rem;
   background: var(--link-color);
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: center;
   font-weight: bold;
   color: var(--text-white);
   text-decoration: none;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s;
   margin-bottom: 1.5rem;
+  word-break: break-word;
+  max-width: 100%;
+  white-space: normal;
+  min-width: 0;
 }
 .recipe-list a:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px) scale(1.04);
   filter: var(--hover-glow);
+  box-shadow: 0 6px 18px var(--shadow);
 }
 
 .recipe-list ul {
@@ -174,10 +186,27 @@ h5 {
 /* Footer */
 .site-footer {
   text-align: center;
-  padding: 1.5rem;
-  background: var(--accent);
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  background: linear-gradient(90deg, var(--accent) 60%, var(--primary-bg) 100%);
   color: #2d1f26;
-  box-shadow: 0 -2px 8px var(--shadow);
+  box-shadow: 0 -2px 16px var(--shadow);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  margin-top: 2rem;
+}
+
+.site-footer a {
+  color: #2d1f26;
+  font-weight: bold;
+  text-decoration: underline dotted;
+  transition: color 0.2s;
+}
+
+.site-footer a:hover {
+  color: var(--link-color);
+  text-decoration: underline solid;
 }
 
 /* Keyframes */
@@ -210,5 +239,13 @@ h5 {
   }
   .recipe-list {
     grid-template-columns: 1fr;
+  }
+  .recipe-list a {
+    font-size: 1rem;
+    padding: 1rem;
+    word-break: break-word;
+    max-width: 100%;
+    white-space: normal;
+    min-width: 0;
   }
 }
