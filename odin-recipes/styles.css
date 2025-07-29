@@ -7,6 +7,7 @@
   --hover: drop-shadow(0 0 6px #e9cb21);
   --tagline-color: darkolivegreen;
   --link-color: #882835;
+  --header-buttons-bg: olive;;
 }
 
 * {
@@ -107,7 +108,7 @@ body {
   animation: slideInRight 1s ease-out 0.3s forwards;
 }
 
-/* Main container */
+/* Container */
 .container {
   flex: 1;
   max-width: 1000px;
@@ -128,11 +129,22 @@ body {
 }
 
 /* Recipes */
+
 #top-five h2 {
+   font-size: 1.3rem;
+  color: var(--text-white);
+  margin: 3rem 0 3rem 0;
+  text-align: left;
   font-family: "Merriweather", serif;
-  color: var(--tagline-color);
-  margin: 1rem auto;
-  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  background: var(--header-buttons-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 8px var(--shadow);
+  padding: 0.4em 1.2em;
+  display: inline-block;
+  text-shadow: 1px 1px 0 #fff8, 0 1px 4px var(--tagline-color);
 }
 .recipe-list {
   list-style: none;
@@ -140,29 +152,33 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  justify-items: stretch;
+  align-items: stretch;
 }
 .recipe-list a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 110px;
-  padding: 1.25rem 0.5rem;
+  min-height: 90px;
+  min-width: 160px;
+  max-width: 220px;
+  padding: 1rem 0.5rem;
   background: var(--link-color);
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
   color: var(--text-white);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 0.02em;
   box-shadow: 0 2px 8px var(--shadow);
   transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s;
   margin-bottom: 1.5rem;
   word-break: break-word;
-  max-width: 100%;
   white-space: normal;
-  min-width: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .recipe-list a:hover {
   transform: translateY(-7px) scale(1.04);
@@ -177,11 +193,39 @@ body {
 /* Credits */
 
 h5 {
-  font-size: 1.2rem;
-  color: var(--tagline-color);
-  margin-top: 1.5rem;
-  text-align: center;
+  font-size: 1.3rem;
+  color: var(--text-white);
+  margin: 2.5rem 0 1rem 0;
+  text-align: left;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  background: var(--header-buttons-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 8px var(--shadow);
+  padding: 0.4em 1.2em;
+  display: inline-block;
+  text-shadow: 1px 1px 0 #fff8, 0 1px 4px var(--tagline-color);
 }
+
+#credits {
+  font-style: italic;
+}
+
+#credits a {
+  color: var(--tagline-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+#credits a:hover {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+
 
 /* Footer */
 .site-footer {
@@ -198,9 +242,10 @@ h5 {
 }
 
 .site-footer a {
-  color: #2d1f26;
+  color: var(--link-color);
   font-weight: bold;
-  text-decoration: underline dotted;
+  font-style: italic; 
+  text-decoration: none;
   transition: color 0.2s;
 }
 
