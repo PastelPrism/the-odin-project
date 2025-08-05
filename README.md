@@ -20,8 +20,8 @@ The curriculum of the Odin Project - Foundations Curriculum consist of 5 real-li
 
 | # | Project Name   | Languages    | Project Page | Challenge Description                | Challenge Page | Progress |
 |---|---------------|--------------|--------------|--------------------------------------|----------------|----------|
-| 1 | [Odin Recipes](https://github.com/PastelPrism/the-odin-project/tree/main/odin-recipes)       | HTML         | [here](https://pastelprism.github.io/the-odin-project/odin-recipes/)      | Make it look like a storybook cookbook | [here](https://pastelprism.github.io/the-odin-project/odin-recipes/index-assignment)        | done     |
-| 2 | [Landing page](https://github.com/PastelPrism/the-odin-project/tree/main/landing-page)  | HTML / CSS   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/)      | Make a page for a rollerblade disco   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/extra-assignment/)       | done     |
+| 1 | [Odin Recipes](https://github.com/PastelPrism/the-odin-project/tree/main/odin-recipes)       | HTML         | [here](https://pastelprism.github.io/the-odin-project/odin-recipes/)      | Make it look like a storybook cookbook | [here](https://pastelprism.github.io/the-odin-project/odin-recipes/index-assignment)        | ✔️    |
+| 2 | [Landing page](https://github.com/PastelPrism/the-odin-project/tree/main/landing-page)  | HTML / CSS   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/)      | Make a page for a rollerblade disco   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/extra-assignment/)       |   ✔️  |
 
 
 Well that was short...
