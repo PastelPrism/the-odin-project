@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🗿 ROCK 📄 PAPER ✂️ SCISSORS</h1>
+    <div class="scoreboard">
+      <div class="score">
+        <h3>You</h3>
+        <span id="human-score">0</span>
+      </div>
+      <div class="score">
+        <h3>Computer</h3>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+    <p id="result" class="result-message">Choose "Rock", "Paper" or "Scissors"</p>
+    <div class="buttons">
+      <button class="choice-btn" onclick="handleChoice('rock')">🗿 Rock</button>
+      <button class="choice-btn" onclick="handleChoice('paper')">📄 Paper</button>
+      <button class="choice-btn" onclick="handleChoice('scissors')">✂️ Scissors</button>
+    </div>
+    <button class="restart-btn" onclick="restartGame()">Restart </button>
+    <div class="history-container">
+      <h3>Round History</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Click <a href="../index.html">here</a> for the original assignment</p>
+    <p>
+      &copy; 2025 - a project from
+      <a href="https://www.theodinproject.com">The Odin Project</a> - made by
+      <a href="https://www.github.com/PastelPrism">Amy</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

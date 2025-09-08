@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  --retro-font: 'Press Start 2P', 'Roboto', Arial, sans-serif;
+  --retro-font-simple: 'Press Start 2P', monospace;
+  /* Pac-Man inspired color palette */
+  --yellow: #ffe600;
+  --green: #00ff99;
+  --red: #ff1744;
+  --black: #000;
+  --dark-gray: #111;
+}
+
+body {
+  font-family: var(--retro-font);
+  background: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 500px;
+  background: #111;
+  padding: 24px 20px 20px 20px;
+  margin: 32px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 12px #ffe600 inset, 0 0 0 6px #ff1744;
+  border: 4px solid #ffe600;
+  outline: 3px solid #ff1744;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: var(--retro-font);
+  font-size: 1.1rem;
+  color: #ffe600;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #00ff99, 0 0 12px #ffe600;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 18px;
+  background: #000;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px #00ff99a0, 0 0 0 3px #ff1744;
+  border: 2px solid #ffe600;
+}
+
+.score {
+  text-align: center;
+  color: #00ff99;
+  text-shadow: 1px 1px 0 #000, 0 0 8px #00ff99;
+  font-family: var(--retro-font);
+  font-size: 0.7rem;
+}
+
+.score span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffe600;
+  text-shadow: 2px 2px 0 #00ff99, 0 0 8px #ffe600;
+  font-family: var(--retro-font);
+}
+
+.result-message {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 18px;
+  color: #00ff99;
+  background: #000;
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 1px 4px #00ff99;
+  border: 2px solid #ffe600;
+  font-family: var(--retro-font);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+
+.choice-btn {
+  padding: 12px 22px;
+  font-size: 0.8rem;
+  border: 2.5px solid #ffe600;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #000;
+  color: #ffe600;
+  font-family: var(--retro-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #00ff99a0;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.choice-btn:hover:not(:disabled) {
+  background: #ff1744;
+  color: #ffe600;
+  border-color: #ffe600;
+  box-shadow: 0 0 16px #ff1744, 0 0 8px #ffe600;
+  transform: scale(1.07);
+}
+
+.choice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.restart-btn {
+  display: block;
+  margin: 0 auto 22px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  border: 2.5px solid #ffe600;
+  border-radius: 12px;
+  background: #000;
+  color: #00ff99;
+  font-family: var(--retro-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #00ff99a0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.restart-btn:hover {
+  background: #ff1744;
+  color: #ffe600;
+  border-color: #ffe600;
+  box-shadow: 0 0 16px #ff1744, 0 0 8px #ffe600;
+  transform: scale(1.07);
+}
+
+.history-container {
+  background: #111;
+  border-radius: 10px;
+  padding: 12px;
+  max-height: none;
+  overflow-y: visible;
+  box-shadow: 0 1px 8px #00ff99a0;
+  border: 2px solid #ffe600;
+}
+
+.history-container h3 {
+  margin-top: 0;
+  color: #00ff99;
+  font-family: var(--retro-font);
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #00ff99;
+  font-size: 0.8rem;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#history-list li {
+  padding: 7px 10px;
+  margin-bottom: 6px;
+  border-radius: 7px;
+  font-family: var(--retro-font);
+  font-size: 0.7rem;
+  color: #ffe600;
+  background: #000;
+  box-shadow: 0 1px 4px #00ff99a0;
+  border: 1.5px solid #00ff99;
+}
+
+.history-win {
+  background: #00ff99;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #ffe600;
+  box-shadow: 0 0 8px #00ff99;
+}
+
+
+.history-loss {
+  background: #ff1744;
+  color: #ffe600;
+  font-weight: bold;
+  border: 2px solid #ffe600;
+  box-shadow: 0 0 8px #ff1744;
+}
+
+
+.history-tie {
+  background: #ffe600;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #00ff99;
+  box-shadow: 0 0 8px #ffe600;
+}
+
+
+.history-final {
+  background: #000;
+  color: #00ff99;
+  font-weight: bold;
+  border: 2px solid #ffe600;
+  box-shadow: 0 0 8px #00ff99;
+}
+
+.choice-word {
+  color: #ff1744;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.site-footer {
+  max-width: 500px;
+  margin: 16px 20px 32px 20px;
+  padding: 18px 20px 12px 20px;
+  background: #111;
+  border-radius: 12px;
+  border: 4px solid #ffe600;
+  outline: 3px solid #ff1744;
+  box-shadow: 0 8px 32px #00ff99a0, 0 1.5px 0 #ffe600 inset, 0 0 0 6px #ff1744;
+  text-align: center;
+  font-family: var(--retro-font-simple);
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.site-footer a {
+  color: #00ff99;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: normal;
+  text-shadow: 2px 2px 0 #000;
+}
+.site-footer a:hover {
+  color: #ffe600;
+  text-decoration: underline;
+  text-shadow: 2px 2px 0 #000;
+}
