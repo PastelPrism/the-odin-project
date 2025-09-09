@@ -22,7 +22,7 @@ The curriculum of the Odin Project - Foundations Curriculum consist of 5 real-li
 |---|---------------|--------------|--------------|--------------------------------------|----------------|----------|
 | 1 | [Odin Recipes](https://github.com/PastelPrism/the-odin-project/tree/main/odin-recipes)       | HTML         | [Here](https://pastelprism.github.io/the-odin-project/odin-recipes/)      | Make it look like a storybook cookbook | [Here](https://pastelprism.github.io/the-odin-project/odin-recipes/index-assignment)        | ✔️    |
 | 2 | [Landing page](https://github.com/PastelPrism/the-odin-project/tree/main/landing-page)  | HTML / CSS   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/)      | Make a page for a rollerblade disco   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/extra-assignment/)       |   ✔️  |
-| 3 | [Rock, Paper, Scissors](https://github.com/PastelPrism/the-odin-project/tree/main/rock-paper-scissors)  | HTML / CSS / JS  | [Here](https://pastelprism.github.io/the-odin-project/rock-paper-scissors/)      | Create a front for the game and make it retro pacman style with round history.   | [Here](https://pastelprism.github.io/the-odin-project/rock-paper-scissors/extra/)       |   ✔️  |
+| 3 | [Rock, Paper, Scissors](https://github.com/PastelPrism/the-odin-project/tree/main/rock-paper-scissors)  | HTML / CSS / JS  | X (_JavaScript only_)      | Create a front for the game and make it retro pacman style with round history.   | [Here](https://pastelprism.github.io/the-odin-project/rock-paper-scissors/extra/)       |   ✔️  |
 
 
 Well that was short...
