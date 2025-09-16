@@ -1,9 +1,6 @@
-/**
- * Rock Paper Scissors Game - Enhanced Version
- * Features: Score tracking, round history, retro styling, responsive design
- */
+// 1: is Read only
 
-// 2: Computer choice generator with equal probability distribution
+// 2: Write function for getComputerChoice
 function getComputerChoice() {
   const randomNumber = Math.random();
   if (randomNumber < 0.33) {
@@ -15,17 +12,16 @@ function getComputerChoice() {
   }
 }
 
-// 3: Human choice normalizer
+// 3: Write function for getHumanChoice 
 function getHumanChoice(choice) {
   return choice.toLowerCase();
 }
 
-// 4: Game state variables
+// 4: Declare score and round variables
 let humanScore = 0;
 let computerScore = 0;
 let roundNumber = 0; 
 
-// Template functions for cleaner HTML generation
 function createRoundHistoryHTML(round, human, computer, result) {
   return `<strong>Round ${round}:</strong> You chose <span class="choice-word">${human}</span>, Computer chose <span class="choice-word">${computer}</span> — ${result.message}`;
 }
@@ -36,7 +32,6 @@ function createChoiceWordSpan(word) {
 
 // 5 and 6: Play the game
 function playRound(humanChoice, computerChoice) {
-  // humanChoice is already lowercase from getHumanChoice()
   
   if (humanChoice === computerChoice) {
     return { message: `It's a tie! You both chose ${createChoiceWordSpan(humanChoice)}.`, outcome: "tie" };
@@ -71,7 +66,7 @@ function handleChoice(choice) {
   }
 }
 
-// Other functions for UI updates
+// Other functions
 function updateUI(message) {
   const resultEl = document.getElementById("result");
   const humanScoreEl = document.getElementById("human-score");

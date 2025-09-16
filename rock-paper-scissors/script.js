@@ -55,7 +55,7 @@ function handleChoice(choice) {
   }
 }
 
-// Other functions for UI updates
+// Other functions
 function updateUI(message) {
   const resultEl = document.getElementById("result");
   const humanScoreEl = document.getElementById("human-score");
