@@ -49,7 +49,7 @@ function playRound(humanChoice, computerChoice) {
     return { message: `Yay! You did it! You win, because ${createChoiceWordSpan(humanChoice)} beats ${createChoiceWordSpan(computerChoice)}.`, outcome: "win" };
   } else {
     computerScore++;
-    return { message: `You didn't, cause you just lost! ${createChoiceWordSpan(computerChoice)} beats ${createChoiceWordSpan(humanChoice)}.`, outcome: "loss" };
+    return { message: `Oh dear, you just lost, because ${createChoiceWordSpan(computerChoice)} beats ${createChoiceWordSpan(humanChoice)}. But that's okay, just try again!`, outcome: "loss" };
   }
 }
 
@@ -64,7 +64,7 @@ function handleChoice(choice) {
 
   if (humanScore === 5 || computerScore === 5) {
     const winner =
-      humanScore > computerScore ? "Oh wow, you win the game! You're amazing!" : "Oh no, the computer wins the game, that's no fun.";
+      humanScore > computerScore ? "🎉 Oh wow, you win the game! You're amazing!" : "😔 Oh no, the computer wins the game — that's no fun.";
     updateUI(winner);
     addRoundHistory("🏆", "-", "-", { message: winner, outcome: "final" });
     disableButtons();
@@ -101,7 +101,7 @@ function restartGame() {
   humanScore = 0;
   computerScore = 0;
   roundNumber = 0;
-  updateUI("Game started again, now make your move!");
+  updateUI("Game started again — now make your move!");
   document.querySelectorAll(".choice-btn").forEach(btn => btn.disabled = false);
 
   const historyList = document.getElementById("history-list");
