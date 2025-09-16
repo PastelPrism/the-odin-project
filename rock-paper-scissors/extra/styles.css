@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* CSS Custom Properties for consistent theming */
+/* CSS Properties */
 :root {
   --retro-font: 'Press Start 2P', 'Roboto', Arial, sans-serif;
   --retro-font-simple: 'Press Start 2P', monospace;
@@ -12,6 +12,7 @@
   --dark-gray: #111;
 }
 
+/* Global Styles */
 body {
   font-family: var(--retro-font);
   background: #000;
@@ -23,6 +24,7 @@ body {
   min-height: 100vh;
 }
 
+/* Game Container */
 .game-container {
   width: 100%;
   max-width: 500px;
@@ -46,6 +48,7 @@ h1 {
   text-shadow: 2px 2px 0 #00ff99, 0 0 12px #ffe600;
 }
 
+/* Scoreboard */
 .scoreboard {
   display: flex;
   justify-content: space-around;
@@ -74,6 +77,7 @@ h1 {
   font-family: var(--retro-font);
 }
 
+/* Result Message */
 .result-message {
   text-align: center;
   font-size: 0.8rem;
@@ -87,6 +91,7 @@ h1 {
   font-family: var(--retro-font);
 }
 
+/* Buttons */
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -146,6 +151,7 @@ h1 {
   transform: scale(1.07);
 }
 
+/* History Container */
 .history-container {
   background: #111;
   border-radius: 10px;
@@ -225,6 +231,7 @@ h1 {
   text-shadow: 1px 1px 0 #000;
 }
 
+/* Footer */
 .site-footer {
   max-width: 500px;
   margin: 16px 20px 32px 20px;
