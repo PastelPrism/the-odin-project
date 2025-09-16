@@ -1,3 +1,5 @@
+// 1: is Read only
+
 // 2: write function for getComputerChoice
 function getComputerChoice() {
   const randomNumber = Math.random();
