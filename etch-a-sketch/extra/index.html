@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="/etch-a-sketch/extra/styles.css">
+</head>
+<body>
+  <header>
+    <button id="resetBtn">New grid</button>
+    <div class="color-controls">
+      <label for="colorMode">Choose your colors:</label>
+      <select id="colorMode">
+        <option value="rainbow">Rainbow Palette</option>
+        <option value="single">Single Color</option>
+        <option value="blackwhite">Black & White</option>
+      </select>
+      
+      <div class="color-options">
+        <input type="color" id="singleColor" value="#3498db" title="Choose your color">
+      </div>
+    </div>
+  </header>
+
+  <div class="intro">
+    <h1>Etch-a-Sketch</h1>
+    <p>Rainbow style!</p>
+    <p>Draw by hovering over the grid and unlock feel-good messages by coloring over the squares more than 5 times.</p>
+    <p>Use the controls above to reset the grid and choose your own favorite coloring mode, because you can!</p>
+    <p>Best played on a PC or laptop with a large or big screen 😊</p>
+  </div>
+
+  <div class="main-content">
+    <div id="container"></div>
+    
+    <div class="message-tracker">
+      <h3>You unlocked <span id="messageCount">0/25</span> messages! Keep going!</h3>
+      <div id="unlockedMessages" class="unlocked-messages"></div>
+    </div>
+  </div>
+
+   <footer>
+    <h4>
+      Click <a href="../index.html">here</a> for the original assignment.
+    </h4>
+    <p>
+      &copy; 2025 A project from 
+      <a href="https://www.theodinproject.com">The Odin Project</a> 
+      made by 
+      <a href="https://github.com/PastelPrism">Amy</a>
+    </p>
+  </footer>
+
+  <script src="/etch-a-sketch/extra/script.js"></script>
+</body>
+</html>
