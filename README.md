@@ -14,7 +14,7 @@ And this projectfolder is a big part of that challenge as this is the main proje
 
 ## 🎓 Curriculum Overview  
 
-The curriculum of the Odin Project - Foundations Curriculum consist of 5 real-life projects between the information and lectures that is given. 
+The curriculum of the Odin Project - Foundations Curriculum consist of 5 real-life projects between the information, challenges and excercises and lectures that are given. 
 
 ## 📁 Projects
 
