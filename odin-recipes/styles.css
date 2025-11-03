@@ -108,6 +108,20 @@ body {
   animation: slideInRight 1s ease-out 0.3s forwards;
 }
 
+.hero.hero--recipe {
+  min-height: 320px;
+  padding: 5rem 1rem 4rem;
+  background-image: url("https://www.allrecipes.com/thmb/8LSWGA4QQ50htYKeoZjG7hVm-ls=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ALR-greek-smashed-pita-recipe-8774383-VAT-hero-01-4x3-0ca2fef7597946f8aabf55320788e044.jpg");
+}
+
+.hero.hero--recipe::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(240, 145, 22, 0.65), rgba(136, 40, 53, 0.55));
+  z-index: 0;
+}
+
 /* Container */
 .container {
   flex: 1;
@@ -118,6 +132,100 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 15px var(--shadow);
   font-size: 1.25rem;
+}
+
+.recipe-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.recipe-detail .back-link {
+  align-self: flex-start;
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(136, 40, 53, 0.35);
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.recipe-detail .back-link:hover {
+  transform: translateY(-2px);
+  filter: var(--hover);
+}
+
+.recipe-card {
+  display: grid;
+  gap: 2rem;
+}
+
+.recipe-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recipe-media img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px var(--shadow);
+}
+
+.recipe-media figcaption {
+  font-size: 1rem;
+  color: var(--text-grey);
+  font-style: italic;
+}
+
+.recipe-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  background: var(--header-buttons-bg);
+  display: inline-block;
+  padding: 0.35em 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--shadow);
+  color: var(--text-white);
+  text-shadow: 1px 1px 0 #fff8, 0 1px 4px var(--tagline-color);
+}
+
+.recipe-section p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.ingredient-list,
+.step-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.ingredient-list li,
+.step-list li {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.step-list {
+  counter-reset: steps;
+  list-style: decimal;
+}
+
+.recipe-enjoy {
+  text-align: center;
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
 }
 
 /* Sections */
@@ -292,5 +400,17 @@ h5 {
     max-width: 100%;
     white-space: normal;
     min-width: 0;
+  }
+  .container {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+  .recipe-detail .back-link {
+    font-size: 1rem;
+    padding: 0.35rem 0.5rem;
+  }
+  .recipe-section h2 {
+    font-size: 1.35rem;
+    display: block;
   }
 }

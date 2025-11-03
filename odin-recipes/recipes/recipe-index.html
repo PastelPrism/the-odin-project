@@ -3,48 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin Recipes</title>
+    <title>Odin Recipes | Recipe Index</title>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="site-header">
+      <nav class="site-nav">
         <ul>
-          <li>
-            <a href="../index-assignment.html">Home</a>
-          </li>
-          <li><a href="recipe-index.html">Recipes</a></li>
-          <li><a href="../index.html">Original assignment</a></li>
+          <li><a href="../index-assignment.html">Home</a></li>
+          <li><a href="./recipe-index.html">Recipes</a></li>
+          <li><a href="../index.html">Original Assignment</a></li>
         </ul>
       </nav>
-
-      
+      <div class="hero">
+        <h1>Our 5 Favorites</h1>
+        <p class="hero-tagline">From crunchy pitas to cozy sandwiches — explore the full menu.</p>
+      </div>
     </header>
 
-      <h1>Our 5 favorites</h1>
-      <p>
-        Find here our delicious
-        <a href="recipes/greek-mashed-pita.html" target="_blank">Greek Mashed Pita</a>
-        recipe.<br />
-        Not in the mood for meat? Try out our favorite recipe for
-        <a href="recipes/cod-piccata.html" target="_blank">Cod Piccata.</a><br />
-        Pizza! Pizza! Pizza! Yes! Here is our recipe for
-        <a href="recipes/roman-style-pizza.html" target="_blank">Roman Style Pizza.</a><br />
-        My oh my! the
-        <a href="recipes/ploughman-sandwich.html" target="_blank">Ploughman's sandwich</a> is
-        one to never forget.<br />
-        Feeling like desert after trying one of our delicious meals? Then, how
-        does
-        <a href="recipes/double-chocolate-biscotti-with-cherries.html" target="_blank"
-          >Double Chocolate Biscotti with Cherries</a
-        >
-        sound to you?
-      </p>
+    <main class="container">
+      <section id="intro">
+        <p>
+          Welcome to the master list! Here you can jump straight to any of our featured dishes. Each link opens in a new tab so you can keep browsing this delicious menu while the recipe loads.
+        </p>
+      </section>
 
-   
-    </div>
-    <footer>
-      <p>&copy; 2025 Odin Recipes. All rights reserved.</p>
-      <p>Created by <a href="https://wwww.github.com/PastelPrism">Amy</a></p>
+      <hr />
+
+      <section id="top-five">
+        <h2>Browse the Recipes</h2>
+        <ul class="recipe-list">
+          <li><a href="./greek-mashed-pita.html" target="_blank">Greek Mashed Pita</a></li>
+          <li><a href="./cod-piccata.html" target="_blank">Cod Piccata</a></li>
+          <li><a href="./roman-style-pizza.html" target="_blank">Roman Style Pizza</a></li>
+          <li><a href="./ploughman-sandwich.html" target="_blank">Ploughman's Sandwich</a></li>
+          <li><a href="./double-chocolate-biscotti-with-cherries.html" target="_blank">Double Chocolate Biscotti with Cherries</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2025 - a project from
+        <a href="https://www.theodinproject.com">The Odin Project</a> - made by
+        <a href="https://www.github.com/PastelPrism">Amy</a>
+      </p>
     </footer>
   </body>
 </html>
