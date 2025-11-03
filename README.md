@@ -20,13 +20,17 @@ The curriculum of the Odin Project - Foundations Curriculum consist of 5 real-li
 
 | # | Project Name   | Languages    | Project Page | Challenge Description                | Challenge Page | Progress |
 |---|---------------|--------------|--------------|--------------------------------------|----------------|----------|
-| 1 | [Odin Recipes](https://github.com/PastelPrism/the-odin-project/tree/main/odin-recipes)       | HTML         | [Here](https://pastelprism.github.io/the-odin-project/odin-recipes/)      | Make it look like a storybook cookbook | [Here](https://pastelprism.github.io/the-odin-project/odin-recipes/index-assignment)        | ✔️    |
-| 2 | [Landing page](https://github.com/PastelPrism/the-odin-project/tree/main/landing-page)  | HTML / CSS   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/)      | Make a page for a rollerblade disco   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/extra-assignment/)       |   ✔️  |
+| 1 | [Odin Recipes](https://github.com/PastelPrism/the-odin-project/tree/main/odin-recipes)       | HTML         | [Here](https://pastelprism.github.io/the-odin-project/odin-recipes/)      | Make it look like a cookbook. | [Here](https://pastelprism.github.io/the-odin-project/odin-recipes/index-assignment)        | ✔️    |
+| 2 | [Landing page](https://github.com/PastelPrism/the-odin-project/tree/main/landing-page)  | HTML / CSS   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/)      | Make a page for a rollerblade disco.   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/extra-assignment/)       |   ✔️  |
 | 3 | [Rock, Paper, Scissors](https://github.com/PastelPrism/the-odin-project/tree/main/rock-paper-scissors)  | HTML / CSS / JS  | X (_JavaScript only_)      | Create a front for the game and make it retro pacman style with round history.   | [Here](https://pastelprism.github.io/the-odin-project/rock-paper-scissors/extra/)       |   ✔️  |
-| 4 | [Etch-a-Sketch](https://github.com/PastelPrism/the-odin-project/tree/main/etch-a-sketch)  | HTML / CSS / JS  | Soon   | Soon  | [Here](https://pastelprism.github.io/the-odin-project/etch-a-sketch/extra/)       |   ✔️  |
+| 4 | [Etch-a-Sketch](https://github.com/PastelPrism/the-odin-project/tree/main/etch-a-sketch)  | HTML / CSS / JS  | [Here](https://pastelprism.github.io/the-odin-project/etch-a-sketch/)   | Turn it into a feelgood game where the user can open presents with feelgood messages.  | [Here](https://pastelprism.github.io/the-odin-project/etch-a-sketch/extra/)       |   ✔️  |
+| 5 | [Calculator](https://github.com/PastelPrism/the-odin-project/tree/main/calculator)  | HTML / CSS / JS  | [Here](https://pastelprism.github.io/the-odin-project/calculator/)  | Create a happy pastel pony calculator. | [Here](https://pastelprism.github.io/the-odin-project/calculator/extra) | ✔️ |
 
+## ➡️ Up Next
 
-Well that was short...
+A decent front that put this all together.  
+
+Well that was short...  
 ⭐ Thank you for visiting and bye! 👋🙂
 <img src="assets/pastel-banner.jpg" width="100%" height="5px" />
  
