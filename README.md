@@ -24,7 +24,7 @@ The curriculum of the Odin Project - Foundations Curriculum consist of 5 real-li
 | 2 | [Landing page](https://github.com/PastelPrism/the-odin-project/tree/main/landing-page)  | HTML / CSS   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/)      | Make a page for a rollerblade disco.   | [Here](https://pastelprism.github.io/the-odin-project/landing-page/extra-assignment/)       |   ✔️  |
 | 3 | [Rock, Paper, Scissors](https://github.com/PastelPrism/the-odin-project/tree/main/rock-paper-scissors)  | HTML / CSS / JS  | X (_JavaScript only_)      | Create a front for the game and make it retro pacman style with round history.   | [Here](https://pastelprism.github.io/the-odin-project/rock-paper-scissors/extra/)       |   ✔️  |
 | 4 | [Etch-a-Sketch](https://github.com/PastelPrism/the-odin-project/tree/main/etch-a-sketch)  | HTML / CSS / JS  | [Here](https://pastelprism.github.io/the-odin-project/etch-a-sketch/)   | Turn it into a feelgood game where the user can open presents with feelgood messages.  | [Here](https://pastelprism.github.io/the-odin-project/etch-a-sketch/extra/)       |   ✔️  |
-| 5 | [Calculator](https://github.com/PastelPrism/the-odin-project/tree/main/calculator)  | HTML / CSS / JS  | [Here](https://pastelprism.github.io/the-odin-project/calculator/)  | Create a happy pastel pony calculator. | [Here](https://pastelprism.github.io/the-odin-project/calculator/extra) | ✔️ |
+| 5 | [Calculator](https://github.com/PastelPrism/the-odin-project/tree/main/calculator)  | HTML / CSS / JS  | [Here](https://pastelprism.github.io/the-odin-project/calculator/)  | Create a happy pastel calculator, with a pony. | [Here](https://pastelprism.github.io/the-odin-project/calculator/extra) | ✔️ |
 
 ## ➡️ Up Next
 
