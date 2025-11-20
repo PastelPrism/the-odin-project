@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foundations Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">
+        
+        <div class="flower" aria-hidden="true">
+          <div id="leaf1"></div>
+          <div id="leaf2"></div>
+          <div id="leaf3"></div>
+          <div id="leaf4"></div>
+          <div id="leaf5"></div>
+          <div id="leaf6"></div>
+        </div>
+        <span class="brand">The Odin Project</span>
+      </div>
+      
+      <button class="random-btn" aria-label="Highlight a random project">Random project</button>
+    </nav>
+    <div class="hero">
+      <h1>Behold: A tiny showcase page</h1>
+      <p class="tagline">Featuring all the projects from the Odin Project.</p>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <p>
+        Hi! A couple of months ago I decided to do the Odin Project and whilst I was working on it, someone suggested to make tiny showcase page for those I want to show, but can't read code. Basically, that's it. Pretty basic. Yep. Since you happen to be here, feel free to click around, a model will pop-up and explain everything that's necessary. Enjoy!
+      </p>
+    </div>
+  </section>
+
+ 
+  <main class="content">
+    <section class="section originals">
+      <div class="container">
+        <div class="carousel-header">
+          <h2>All assignments that belong to the "Foundations" track.</h2>
+          <div class="carousel-controls">
+            <button class="carousel-btn prev" data-carousel="originals" aria-label="Previous">‹</button>
+            <button class="carousel-btn next" data-carousel="originals" aria-label="Next">›</button>
+          </div>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="originals">
+           
+            <article class="card" data-project="odin-recipes">
+              <h3>Odin Recipes</h3>
+              <div class="card-icon">🔍</div>
+            </article>
+
+            <article class="card" data-project="landing-page">
+              <h3>Landing Page</h3>
+              <div class="card-icon">🔍</div>
+            </article>
+
+             <article class="card" data-project="rock-paper-scissors">
+              <h3>Rock‑Paper‑Scissors</h3>
+              <div class="card-icon">🔍</div>
+            </article>
+
+            <article class="card gift" data-project="etch-a-sketch">
+              <h3>Etch-a-Sketch</h3>
+              <div class="card-icon">🔍</div>
+            </article>
+
+            <article class="card" data-project="calculator">
+              <h3>Calculator</h3>
+              <div class="card-icon">🔍</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>
+        View the repository on
+        <a href="https://github.com/PastelPrism/the-odin-project/tree/main" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+      <p class="progress">Foundations complete: <strong>5/5</strong> Hurray</p>
+      <p class="progress">Advanced JavaScript complete: <strong>0/0</strong> Awh</p>
+    </div>
+  </footer>
+
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-image">
+        <img src="" alt="" id="modal-img">
+      </div>
+      <div class="modal-info">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div class="modal-links">
+          <a id="modal-live-link" href="#" target="_blank" class="btn primary">View Live</a>
+          <a id="modal-repo-link" href="#" target="_blank" class="btn accent">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
