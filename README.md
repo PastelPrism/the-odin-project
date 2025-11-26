@@ -7,7 +7,7 @@
 
 Hi there!👋 
 
-Last **April 2025** I got challenged to do **every web development course** we could find. A challenge I happily accepted. 🎉
+Last **April 2025** I got challenged to do **every web development course** we could find. A challenge I happily accepted, but didnt make at all... :p
 And this projectfolder is a big part of that challenge as this is the main project folder for all the projects from [The Odin Project!](https://www.theodinproject.com/paths/foundations/courses/foundations) Foundations Curriculum. 
 
 <img src="assets/pastel-banner.jpg" alt="Pastel Prism Banner" width="100%" height="5px" />
