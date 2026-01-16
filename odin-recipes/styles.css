@@ -4,10 +4,11 @@
   --text-white: #f4eed0;
   --text-grey: #b9b6b8;
   --shadow: rgba(0, 0, 0, 0.3);
+  --text-shadow: rgba(0, 0, 0, 0.5);
   --hover: drop-shadow(0 0 6px #e9cb21);
   --tagline-color: darkolivegreen;
   --link-color: #882835;
-  --header-buttons-bg: olive;;
+  --header-buttons-bg: olive;
 }
 
 * {
@@ -75,7 +76,6 @@ body {
   z-index: 1;
   font-family: "Cinzel", cursive;
   margin-bottom: 0.5rem;
-  display: block;
   background: none;
   box-shadow: none;
 }
@@ -83,7 +83,7 @@ body {
 .hero h1 {
   font-size: 3.5rem;
   color: var(--link-color);
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: var(--text-shadow);
   display: block;
   margin-right: 0;
   margin-bottom: 0.5rem;
@@ -285,8 +285,6 @@ body {
   margin-bottom: 1.5rem;
   word-break: break-word;
   white-space: normal;
-  margin-left: 0;
-  margin-right: 0;
 }
 .recipe-list a:hover {
   transform: translateY(-7px) scale(1.04);
@@ -294,9 +292,6 @@ body {
   box-shadow: 0 6px 18px var(--shadow);
 }
 
-.recipe-list ul {
-  background-color: var(--text-light);
-}
 
 /* Credits */
 
