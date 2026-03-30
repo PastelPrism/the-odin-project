@@ -36,7 +36,7 @@ Well that was short...
 ##### ℹ️ _P.S._ _P.S._ _P.S._ _P.S._ _P.S._ ###### 
 A little fun fact!  
   
-💡 Did you know:        
+💡 Did you know?:        
 💎 There’s a planet mostly made from diamond! It's called 55 Cancri e, and the good news is, it's around twice the size of Earth! But too far away to open a new jewelry store, as it's 40 light-years away from Earth. But maybe Star Wars or Superman or something can get you there, who knows 🤷‍♀️
 (thank you [Science Focus](https://www.sciencefocus.com/science/fun-facts))
 
