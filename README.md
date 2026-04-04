@@ -1,6 +1,6 @@
 <img src="assets/pastel-banner.jpg" alt="Pastel Prism Banner" width="100%" height="5px" />
 
-#  (ᚦ) Projects from The Odin Project - Foundations Curriculum
+#  Projects from The Odin Project - Foundations Curriculum
 
 ![Last Commit](https://img.shields.io/github/last-commit/PastelPrism/the-odin-project)
 ![Top Language](https://img.shields.io/github/languages/top/PastelPrism/the-odin-project)
